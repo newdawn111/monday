@@ -18,6 +18,7 @@
  *   MONDAY_API_TOKEN=your_token_here node automated-setup.js
  */
 
+require('dotenv').config();
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
