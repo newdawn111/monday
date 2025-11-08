@@ -5,6 +5,7 @@ Complete automation scripts for setting up a comprehensive Monday.com workspace 
 ## 📚 Documentation
 
 - **[COMPLETE IMPLEMENTATION GUIDE](COMPLETE_IMPLEMENTATION_GUIDE.md)** - Full setup guide with ICount integration, automations, dashboards, and daily operations
+- **[API PLAYGROUND GUIDE](API_PLAYGROUND_GUIDE.md)** - How to configure boards using Monday.com API Playground
 - **[MANUAL SETUP GUIDE](MANUAL_SETUP_GUIDE.md)** - Step-by-step mutations for manual board creation
 - **[QUICK START GUIDE](QUICK_START.md)** - 5-minute quickstart for automated setup
 
