@@ -1,0 +1,153 @@
+════════════════════════════════════════════════════════════════
+  MONDAY.COM SOLAR BUSINESS - CONFIGURATION CHECKLIST
+════════════════════════════════════════════════════════════════
+
+Total Steps: 25
+Estimated Time: 15-20 minutes
+
+Instructions:
+- Open each board URL below
+- Check off each item as you complete it
+- All settings are done by clicking the column header
+
+
+════════════════════════════════════════════════════════════════
+  SALES PIPELINE BOARD
+════════════════════════════════════════════════════════════════
+  URL: https://monday.com/boards/5084268957
+
+  ☐ 1. Lost Reason → Edit labels
+       Add: Price, Timeline, Competitor, Changed Mind, Other
+
+  ☐ 2. Quoted Price (ILS) → ⚙ Customize
+       Unit: ₪  Position: Left
+
+  ☐ 3. Expected Profit (ILS) → ⚙ Customize
+       Unit: ₪  Position: Left
+
+  ☐ 4. Expected Margin % → ⚙ Customize
+       Unit: %  Position: Right
+
+  ☐ 5. Probability % → ⚙ Customize
+       Unit: %  Position: Right
+
+  ☐ 6. Add Column → Formula
+       Name: Weighted Value
+       Formula: {Quoted Price (ILS)} * {Probability %} / 100
+
+  ☐ 7. Add Column → Formula
+       Name: Lead Time (days)
+       Formula: DAYS({Quote Date}, TODAY())
+
+
+════════════════════════════════════════════════════════════════
+  PROJECTS & INSTALLATION BOARD
+════════════════════════════════════════════════════════════════
+  URL: https://monday.com/boards/5084270237
+
+  ☐ 8. Customer Type → Edit labels
+       Add: Business, Private
+
+  ☐ 9. Project Status → Edit labels (with colors)
+       On Schedule (Green)
+       Delayed (Red)
+       Waiting on Permits (Orange)
+       Completed (Blue)
+       Issue (Pink)
+
+  ☐ 10. Equipment Delivered → Edit labels (with colors)
+        Not Ordered (Gray)
+        Ordered (Orange)
+        In Transit (Purple)
+        Delivered (Green)
+
+  ☐ 11. Inspection Status → Edit labels (with colors)
+        Not Started (Gray)
+        Private Inspector Done (Orange)
+        Waiting Elec. Co. (Purple)
+        All Complete (Green)
+
+  ☐ 12. Contract Value (ILS) → ⚙ Customize
+        Unit: ₪  Position: Left
+
+  ☐ 13. Project Cost (ILS) → ⚙ Customize
+        Unit: ₪  Position: Left
+
+  ☐ 14. Add Column → Formula
+        Name: Project Profit (ILS)
+        Formula: {Contract Value (ILS)} - {Project Cost (ILS)}
+        Then add currency: ₪
+
+  ☐ 15. Add Column → Formula
+        Name: Profit Margin %
+        Formula: ({Contract Value (ILS)} - {Project Cost (ILS)}) / {Contract Value (ILS)} * 100
+        Then add unit: %
+
+  ☐ 16. Add Column → Formula
+        Name: Project Duration (days)
+        Formula: DAYS({Installation Start Date}, {Installation End Date})
+
+
+════════════════════════════════════════════════════════════════
+  FINANCIAL MANAGEMENT BOARD
+════════════════════════════════════════════════════════════════
+  URL: https://monday.com/boards/5084271089
+
+  ☐ 17. Transaction Type → Edit labels
+        Add: Invoice, Expense, Payment Received
+
+  ☐ 18. Payment Method → Edit labels
+        Add: Bank Transfer, Check, Credit Card, Cash
+
+  ☐ 19. Category → Edit labels
+        Add: Equipment, Labor, Permits, Marketing, Operations, Other
+
+  ☐ 20. Payment Status → Edit labels (with colors)
+        Not Sent (Gray)
+        Sent (Orange)
+        Paid (Green)
+        Overdue (Red)
+        Cancelled (Dark Gray)
+
+  ☐ 21. ICount Status → Edit labels (with colors)
+        Not in ICount (Gray)
+        Synced (Orange)
+        Sent from ICount (Purple)
+        Paid in ICount (Green)
+
+  ☐ 22. Amount (ILS) → ⚙ Customize
+        Unit: ₪  Position: Left
+
+  ☐ 23. Tax Amount (VAT) → ⚙ Customize
+        Unit: ₪  Position: Left
+
+  ☐ 24. Add Column → Formula
+        Name: Total with Tax
+        Formula: {Amount (ILS)} + {Tax Amount (VAT)}
+        Then add currency: ₪
+
+  ☐ 25. Add Column → Formula
+        Name: Days Overdue
+        Formula: IF({Payment Date} = "", IF({Due Date} < TODAY(), DAYS({Due Date}, TODAY()), 0), 0)
+
+
+════════════════════════════════════════════════════════════════
+  COMPLETION
+════════════════════════════════════════════════════════════════
+
+  ✓ All 25 steps completed!
+
+  Next: Set up automations (see COMPLETE_IMPLEMENTATION_GUIDE.md)
+
+
+════════════════════════════════════════════════════════════════
+  QUICK TIPS
+════════════════════════════════════════════════════════════════
+
+  • Click column header to access settings
+  • "Edit labels" = for dropdowns and status columns
+  • ⚙ Customize = for currency/percentage symbols
+  • "+" button = to add new columns (formulas)
+  • Copy formulas exactly as shown (use { } around column names)
+
+════════════════════════════════════════════════════════════════
