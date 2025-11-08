@@ -5,6 +5,7 @@
   "main": "automated-setup.js",
   "scripts": {
     "setup": "node automated-setup.js",
+    "automate": "node browser-automation.js",
     "test": "echo \"No tests yet\" && exit 0"
   },
   "keywords": [
@@ -17,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "puppeteer": "^21.0.0"
   }
 }
