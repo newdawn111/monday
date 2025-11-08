@@ -52,8 +52,7 @@ async function makeRequest(query, variables = {}) {
       {
         headers: {
           'Authorization': CONFIG.API_TOKEN,
-          'Content-Type': 'application/json',
-          'API-Version': '2024-10'
+          'Content-Type': 'application/json'
         }
       }
     );
