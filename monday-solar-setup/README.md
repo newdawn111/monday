@@ -2,6 +2,22 @@
 
 Complete automation scripts for setting up a comprehensive Monday.com workspace for solar systems business management.
 
+## ⚡ Quick Status
+
+**✅ Boards Created:** All 4 boards are live with groups and columns!
+
+**📝 Next Step:** Complete the configuration using the **Interactive Setup Guide**
+
+```bash
+node interactive-setup-guide.js
+```
+
+This will guide you through configuring dropdown labels, status colors, currency symbols (₪), and formula columns - all the settings that can't be done via API.
+
+**Estimated time:** 15-20 minutes
+
+---
+
 ## 📚 Documentation
 
 - **[COMPLETE IMPLEMENTATION GUIDE](COMPLETE_IMPLEMENTATION_GUIDE.md)** - Full setup guide with ICount integration, automations, dashboards, and daily operations
@@ -151,7 +167,30 @@ The script will:
 
 ## 📖 Usage Options
 
-### Option 1: Automated Setup (Recommended)
+### Option 1: Interactive Setup Guide (⭐ RECOMMENDED)
+
+The boards are already created! Use the **interactive guide** to complete the remaining configuration (dropdown labels, status colors, currency symbols, formula columns):
+
+```bash
+node interactive-setup-guide.js
+```
+
+**What it does:**
+- ✅ Opens each board automatically in your browser
+- ✅ Shows you exactly what to click step-by-step
+- ✅ Waits for you to confirm each step
+- ✅ Tracks progress with visual progress bar
+- ✅ Covers all 25 configuration steps
+
+**Perfect for:**
+- Completing board setup (boards already created)
+- Configuring settings that can't be done via API
+- First-time Monday.com users
+- Anyone who wants guided assistance
+
+**Note:** Since the Monday.com API doesn't support configuring dropdown labels, status colors, currency symbols, or formula columns, these must be done through the UI. This script makes it super easy!
+
+### Option 2: Automated Setup
 
 Use the `automated-setup.js` script for a fully automated, hands-free setup:
 
@@ -166,7 +205,9 @@ npm run setup
 - ✅ Results saved to JSON
 - ✅ Configurable delay to avoid rate limits
 
-### Option 2: Manual Setup
+**Note:** API limitations mean some configurations (dropdown labels, status colors, currency symbols, formulas) must still be done in the UI afterward.
+
+### Option 3: Manual Setup
 
 Use the `monday-setup-config.js` file with Monday.com API Playground:
 
@@ -220,11 +261,16 @@ const columns = [
 
 | File | Purpose |
 |------|---------|
+| `interactive-setup-guide.js` | ⭐ Interactive UI configuration guide (RECOMMENDED) |
 | `automated-setup.js` | Main automation script |
 | `monday-setup-config.js` | Reference configuration with all mutations |
+| `test-api-limits.js` | Demonstrates API limitations for column configuration |
 | `package.json` | Node.js dependencies |
 | `.env.template` | Environment configuration template |
 | `setup-results.json` | Generated after setup with all IDs |
+| `COMPLETE_IMPLEMENTATION_GUIDE.md` | Full implementation guide with automations & integrations |
+| `API_PLAYGROUND_GUIDE.md` | How to use Monday.com API Playground |
+| `MANUAL_SETUP_GUIDE.md` | Step-by-step manual setup instructions |
 | `README.md` | This file |
 
 ## ✅ Created Boards
